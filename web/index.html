@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Planned Maintenance – Field Service Planner</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <aside class="side">
+    <div class="brand"><span class="logo"></span><div><b id="coName">Field Service</b><small>Maintenance Planner</small></div></div>
+    <nav id="nav">
+      <button data-v="dash" class="on"><svg viewBox="0 0 16 16"><rect x="1.5" y="1.5" width="5.5" height="6" rx="1"/><rect x="9" y="1.5" width="5.5" height="3.5" rx="1"/><rect x="1.5" y="9.5" width="5.5" height="5" rx="1"/><rect x="9" y="7" width="5.5" height="7.5" rx="1"/></svg>Dashboard</button>
+      <button data-v="plan"><svg viewBox="0 0 16 16"><path d="M1.5 3.5h6M4.5 7h8M2.5 10.5h5M8.5 14h5"/></svg>Planner</button>
+      <button data-v="wos"><svg viewBox="0 0 16 16"><path d="M5 3.5h9M5 8h9M5 12.5h9"/><circle cx="2" cy="3.5" r=".6"/><circle cx="2" cy="8" r=".6"/><circle cx="2" cy="12.5" r=".6"/></svg>Work orders</button>
+      <button data-v="letters"><svg viewBox="0 0 16 16"><rect x="1.5" y="3" width="13" height="10" rx="1.5"/><path d="M2 4l6 5 6-5"/></svg>Correspondence</button>
+      <button data-v="data"><svg viewBox="0 0 16 16"><ellipse cx="8" cy="3.5" rx="5.5" ry="2"/><path d="M2.5 3.5v9c0 1.1 2.5 2 5.5 2s5.5-.9 5.5-2v-9M2.5 8c0 1.1 2.5 2 5.5 2s5.5-.9 5.5-2"/></svg>Data &amp; export</button>
+    </nav>
+    <div class="side-foot">Synthetic demo data</div>
+  </aside>
+  <div class="content">
+    <header class="topbar">
+      <div><span class="crumb">Maintenance Planner /</span> <h1 id="pageTitle">Overview</h1></div>
+      <div class="spacer"></div>
+      <span class="meta" id="refreshInfo">–</span>
+      <button class="btn ghost" id="btnRefresh">Refresh data</button>
+    </header>
+    <main>
+      <section id="v-dash" class="view on"></section>
+      <section id="v-plan" class="view"></section>
+      <section id="v-wos" class="view"></section>
+      <section id="v-letters" class="view"></section>
+      <section id="v-data" class="view"></section>
+    </main>
+  </div>
+</div>
+<aside class="drawer" id="drawer"></aside>
+<div class="modal-bg" id="modalBg"><div class="modal" id="modal"></div></div>
+<div id="tip"></div><div id="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>

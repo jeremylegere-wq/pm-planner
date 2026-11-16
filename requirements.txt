@@ -1,0 +1,7 @@
+flask>=3.0
+openpyxl>=3.1
+python-docx>=1.1
+# Windows only, for real Outlook drafts (falls back to .eml files without it):
+pywin32>=306; sys_platform == "win32"
+# Optional, for a live Salesforce / ServiceMax pull:
+# simple-salesforce>=1.12

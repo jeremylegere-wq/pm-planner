@@ -1,0 +1,185 @@
+{
+  "company": {
+    "name": "Northstar Field Services",
+    "team": "Planning & Scheduling Team",
+    "email": "planning@northstar-demo.example",
+    "phone_au": "1800 000 000",
+    "phone_nz": "0800 000 000",
+    "state_label": "VIC"
+  },
+  "source": {
+    "type": "file",
+    "path": "data/PM_Work_Order_Export.xlsx",
+    "sheet": "PM Work Orders"
+  },
+  "column_map": {
+    "wo_number": "Work Order Number",
+    "case_number": "Case Number",
+    "account": "Account Name",
+    "address": "Site Street Address",
+    "suburb": "Site City",
+    "state": "Site State",
+    "postcode": "Site Postcode",
+    "region": "Service Territory",
+    "system_id": "Asset ID",
+    "serial": "Serial Number",
+    "product": "Asset Description",
+    "msa_number": "Service Contract #",
+    "contract_start": "Contract Start Date",
+    "contract_end": "Contract End Date",
+    "pm_due": "PM Due Date",
+    "pm_sequence": "PM Sequence",
+    "duration_hrs": "Estimated Duration (hrs)",
+    "priority": "Priority",
+    "sf_status": "Work Order Status",
+    "contact_name": "Site Contact Name",
+    "contact_email": "Site Contact Email",
+    "contact_phone": "Site Contact Phone",
+    "lat": "Site Latitude",
+    "lon": "Site Longitude",
+    "category": "Asset Category"
+  },
+  "work_day": {
+    "start": "08:00",
+    "end": "17:00",
+    "capacity_hrs": 8
+  },
+  "offer_hold_business_days": 5,
+  "outlook": {
+    "mode": "display",
+    "shared_mailbox": "",
+    "allow_send": false
+  },
+  "holidays": [
+    "2026-12-25",
+    "2026-12-28",
+    "2027-01-01",
+    "2027-01-26",
+    "2027-03-08",
+    "2027-03-26",
+    "2027-03-29",
+    "2027-04-26"
+  ],
+  "engineers": [
+    {
+      "id": "E01",
+      "name": "Alex Morgan",
+      "home": "Metro North",
+      "skills": [
+        "HVAC",
+        "FIRE",
+        "ELEC"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Priya Nair",
+      "home": "Metro North",
+      "skills": [
+        "HVAC",
+        "ELEC",
+        "GEN"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Sam Whitfield",
+      "home": "Metro East",
+      "skills": [
+        "FIRE",
+        "LIFT"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Jordan Blake",
+      "home": "Metro East",
+      "skills": [
+        "ELEC",
+        "GEN",
+        "REFR"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Casey Tran",
+      "home": "Metro South",
+      "skills": [
+        "LIFT",
+        "HVAC"
+      ]
+    },
+    {
+      "id": "E06",
+      "name": "Riley Kemp",
+      "home": "Metro South",
+      "skills": [
+        "HVAC",
+        "REFR",
+        "FIRE"
+      ]
+    },
+    {
+      "id": "E07",
+      "name": "Dana Okafor",
+      "home": "Metro West",
+      "skills": [
+        "ELEC",
+        "FIRE",
+        "HVAC"
+      ]
+    },
+    {
+      "id": "E08",
+      "name": "Morgan Hale",
+      "home": "Metro West",
+      "skills": [
+        "LIFT",
+        "GEN",
+        "ELEC"
+      ]
+    },
+    {
+      "id": "E09",
+      "name": "Taylor Nguyen",
+      "home": "Regional",
+      "skills": [
+        "HVAC",
+        "FIRE",
+        "REFR",
+        "ELEC"
+      ]
+    },
+    {
+      "id": "E10",
+      "name": "Jamie Ross",
+      "home": "Regional",
+      "skills": [
+        "HVAC",
+        "LIFT",
+        "GEN",
+        "REFR"
+      ]
+    }
+  ],
+  "leave": [
+    {
+      "engineer": "E03",
+      "from": "2026-12-21",
+      "to": "2027-01-08",
+      "label": "Annual leave"
+    },
+    {
+      "engineer": "E06",
+      "from": "2026-11-23",
+      "to": "2026-11-27",
+      "label": "Training"
+    },
+    {
+      "engineer": "E09",
+      "from": "2027-01-11",
+      "to": "2027-01-22",
+      "label": "Annual leave"
+    }
+  ]
+}
