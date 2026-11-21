@@ -4,6 +4,9 @@ A planned-maintenance dashboard, drag-and-drop Gantt planner and customer corres
 field service team (HVAC, electrical, fire, lifts, generators, refrigeration in the demo data). **All data is synthetic** (fictional customers, contacts, serials,
 technicians; contact e-mails use the reserved `.example` domain).
 
+
+![Planned maintenance dashboard with Victoria map, KPIs and workload charts (synthetic data)](docs/images/dashboard.png)
+
 ## Run
     pip install -r requirements.txt
     python run.py              # opens http://127.0.0.1:5055   (python run.py --reset rebuilds the demo)
